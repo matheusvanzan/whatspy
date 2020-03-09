@@ -25,6 +25,8 @@ that adds a few easy to use enhancements.
 
 To use chrome with selenium you will need ChromeDriver.
 
+A .whatspy directory will be added to your home directory to save chrome profile.
+
 ## Roadmap
 
 - [x] Save QRCode image for scan

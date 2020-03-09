@@ -41,7 +41,7 @@ class Chrome(SeleniumChrome):
         # chrome_options.add_argument('--remote-debugging-port=8082')
         chrome_driver = DEFAULT_DRIVER
         
-        chrome_options.add_argument('user-data-dir=/home/vanzan/whatspy/chromepy/profile')
+        chrome_options.add_argument('user-data-dir=~/.whatspy/profile')
         
         # User agent
         if rotate_user_agent:
