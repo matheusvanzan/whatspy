@@ -29,17 +29,17 @@ class Whatsapp:
         else:
             print('Whatsapp already logged in...')
         
-        chrome.screenshot('chromepy/1.png')
+        chrome.screenshot('screens/1.png')
         
         chrome.wait_for(selectors['search_input']).send_keys(to)
         chrome.wait_for(selectors['search_result']).click()
         
-        chrome.screenshot('chromepy/2.png')
+        chrome.screenshot('screens/2.png')
         
         chrome.wait_for(selectors['message_input']).send_keys(message)
         chrome.wait_for(selectors['message_send']).click()
         
-        chrome.screenshot('chromepy/3.png')
+        chrome.screenshot('screens/3.png')
         
         chrome.quit()
 

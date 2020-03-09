@@ -16,6 +16,13 @@ A PNG file is saved at root directory as qrcode.png for scaning with yout phone.
 WhatsPy will try to save a profile so you don't need to scan the qrcode everytime.
 Keep in mind that whatsapp logs you out if you try to login in multiple browsers.
 
+## Chrome Install
+
+WhatsPy uses a Chrome class that is just a wraper for the Selenum default implementation
+that adds a few easy to use enhancements.
+
+To use chrome with selenium you will need ChromeDriver.
+
 ## Roadmap
 
 - [x] Save QRCode image for scan
