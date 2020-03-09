@@ -1,9 +1,11 @@
-from selenium import webdriver
+from selenium.webdriver import Chrome as SeleniumChrome
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+
 from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.chrome.options import Options
+
 import os
 
 from random_user_agent.user_agent import UserAgent
@@ -30,8 +32,7 @@ DEFAULT_SOFTWARE_NAMES = [
 ]
 
 
-
-class Chrome(webdriver.Chrome):
+class Chrome(SeleniumChrome):
     
     def __init__(self, rotate_user_agent=False):
         chrome_options = Options()
@@ -60,15 +61,21 @@ class Chrome(webdriver.Chrome):
     def screenshot(self, path):
         return self.get_screenshot_as_file(path)
         
-    def element_exists_at(self, selector):
-        return self.wait_for(selector) is not None
+    def element_exists_at(self, selector, timeout=None):
+        return self.wait_for(selector, timeout) is not None
         
     def wait_for(self, selector, timeout=None):
-        timeout = 60 # seconds
+        if not timeout: 
+            timeout = 60 # seconds
+        
         try:
             wait = WebDriverWait(self, timeout)
             loc = (By.CSS_SELECTOR, selector)
+            
             wait.until(EC.presence_of_element_located(loc))
+            wait.until(EC.visibility_of_element_located(loc))
+            # wait.until(EC.elementToBeClickable(loc))
+            
             print('Found', selector)
             return self.find_element_by_css_selector(selector)
         except TimeoutException:

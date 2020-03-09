@@ -1,5 +1,7 @@
 # WhatsPy
 
+Python Whatsapp API based on Selenium and ChromeDriver
+
 > Working as of Mar 09 2020
 
 ## limitations
@@ -12,7 +14,7 @@
 
 ## QRCode scan
 
-A PNG file is saved at root directory as qrcode.png for scaning with yout phone. 
+A PNG file is saved at local root directory as qrcode.png for scaning with yout phone. 
 WhatsPy will try to save a profile so you don't need to scan the qrcode everytime.
 Keep in mind that whatsapp logs you out if you try to login in multiple browsers.
 
