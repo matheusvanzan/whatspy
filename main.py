@@ -22,7 +22,7 @@ class Whatsapp:
         # Not logged in
         if not chrome.element_exists_at(selectors['search_input']):
             qrcode = chrome.wait_for(selectors['qrcode'])
-            chrome.screenshot('chromepy/qrcode.png')
+            chrome.screenshot('qrcode.png')
             
             print('Look for whatsapp QRCode inside chromepy folder.')
             input('...')
