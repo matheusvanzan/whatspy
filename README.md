@@ -1,4 +1,4 @@
-# whatspy
+# WhatsPy
 
 > Working as of Mar 09 2020
 

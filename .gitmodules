@@ -1,3 +1,0 @@
-[submodule "chromepy"]
-	path = chromepy
-	url = https://github.com/matheusvanzan/chromepy.git

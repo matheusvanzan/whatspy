@@ -1,0 +1,9 @@
+2020/03/08-23:11:23.975 4232 Reusing MANIFEST /home/vanzan/whatspy/chromepy/profile/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/03/08-23:11:23.975 4232 Recovering log #7
+2020/03/08-23:11:23.975 4232 Reusing old log /home/vanzan/whatspy/chromepy/profile/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000007.log 
+2020/03/08-23:11:24.747 4255 Compacting 1@1 + 1@2 files
+2020/03/08-23:11:24.811 4255 Generated table #10@1: 22212 keys, 809526 bytes
+2020/03/08-23:11:24.811 4255 Compacted 1@1 + 1@2 files => 809526 bytes
+2020/03/08-23:11:24.813 4255 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/03/08-23:11:24.813 4255 Delete type=2 #8
+2020/03/08-23:11:24.813 4255 Delete type=2 #5
