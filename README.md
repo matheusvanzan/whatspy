@@ -38,3 +38,12 @@ A .whatspy directory will be added to your home directory to save chrome profile
 - [ ] Read latest archived messages from chat
 - [ ] Archive chat
 - [ ] Unarchive chat
+- 
+
+## Changelog
+
+- 0.0.1 - Initial release
+- 0.0.2
+- 0.0.3
+- 0.0.4
+- 0.1.0 - Add class ChromeRemote to access Google Chrome reference
