@@ -6,13 +6,11 @@ Python Whatsapp API based on Selenium and ChromeDriver
 
 ## Usage
 
-![ChromePy](/whatspy/img/chromepy.png)
-
 `Chrome` and `ChromeRemote` work together to control the browser instance. Once
 `Chrome` has been started with `start_chrome.py`, you can just start the remote 
 with `start_remote.py` and it will use the same browser instance.
 
-See my ![ChromePy](https://github.com/matheusvanzan/chromepy) repo for more info on the remote aproach.
+See the [ChromePy](https://github.com/matheusvanzan/chromepy) repo for more info on the remote aproach.
 
 ## Limitations
 
