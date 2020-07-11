@@ -1,1 +1,0 @@
-from whatspy.main import *

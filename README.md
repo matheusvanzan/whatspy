@@ -4,7 +4,17 @@ Python Whatsapp API based on Selenium and ChromeDriver
 
 > Working as of Mar 09 2020
 
-## limitations
+## Usage
+
+![ChromePy](/whatspy/img/chromepy.png)
+
+`Chrome` and `ChromeRemote` work together to control the browser instance. Once
+`Chrome` has been started with `start_chrome.py`, you can just start the remote 
+with `start_remote.py` and it will use the same browser instance.
+
+See my ![ChromePy](https://github.com/matheusvanzan/chromepy) repo for more info on the remote aproach.
+
+## Limitations
 
 - All web.whatsapp.com limitations
 - Scan QRCode on first run
@@ -14,18 +24,18 @@ Python Whatsapp API based on Selenium and ChromeDriver
 
 ## QRCode scan
 
-A PNG file is saved at local root directory as qrcode.png for scaning with yout phone. 
+A `screens/qrcode.png` file is saved for scaning with your smartphone. 
 WhatsPy will try to save a profile so you don't need to scan the qrcode everytime.
 Keep in mind that whatsapp logs you out if you try to login in multiple browsers.
 
 ## Chrome Install
 
-WhatsPy uses a Chrome class that is just a wraper for the Selenum default implementation
-that adds a few easy to use enhancements.
+WhatsPy uses a Chrome class that is just a wraper Singleton for the Selenum 
+default implementation adding a few easy to use enhancements.
 
 To use chrome with selenium you will need ChromeDriver.
 
-A .whatspy directory will be added to your home directory to save chrome profile.
+A `profile` directory will be added to your project directory to save chrome profile.
 
 ## Roadmap
 

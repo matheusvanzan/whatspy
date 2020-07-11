@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Chrome
+whatspy/profile/*
+whatspy/screens/*
+
+!whatspy/profile/.gitkeep
+!whatspy/screens/.gitkeep
