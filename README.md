@@ -2,7 +2,7 @@
 
 Python Whatsapp API based on Selenium and ChromeDriver
 
-> Working as of Mar 09 2020
+> Working as of Jul 11 2020
 
 ## Usage
 
