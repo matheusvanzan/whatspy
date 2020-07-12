@@ -12,6 +12,7 @@ from selenium.common.exceptions import TimeoutException
 import os
 from os.path import expanduser
 
+from datetime import datetime
 from common import *
 
 
@@ -29,7 +30,11 @@ class ChromeClass(SeleniumChrome):
         
         # save session
         with open(SESSION, 'w+') as f:
-            f.write('{} {}'.format(self.command_executor._url, self.session_id))
+            f.write('{} {} {}'.format(
+                datetime.now().strftime('%H-%M-%S-%d-%m-%Y'),
+                self.command_executor._url, 
+                self.session_id
+            ))
         
         return super_return
         
@@ -55,7 +60,7 @@ class ChromeClass(SeleniumChrome):
             return self.find_element_by_css_selector(selector)
         except TimeoutException:
             print('Loading took too much time!')
-            self.screenshot('chromepy/error.png')
+            self.screenshot('screens/error.png')
             return None
 
 

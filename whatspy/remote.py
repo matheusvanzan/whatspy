@@ -12,7 +12,7 @@ class ChromeRemote(SeleniumRemote):
         print('Searching for Chrome instance... ')
         
         with open(SESSION, 'r') as f:
-            executor_url, session_id = f.read().split(' ')
+            datetime_, executor_url, session_id = f.read().split(' ')
             capabilities = OPTIONS.to_capabilities()
             
             super_return = super(ChromeRemote, self).__init__(

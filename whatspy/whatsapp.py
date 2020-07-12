@@ -67,13 +67,23 @@ class Whatsapp:
             
     def load_chats(self):
         '''
-            return a triple (name, message, timestamp) for every chat open
+            return a triple (name, timestamp) for every chat open
         '''
-        sel = '#side div.X7YrQ'
-        chats = self.chrome.find_elements_by_css_selector(sel)
+        return_chats = []
+        sel = '#pane-side'
         
+        timeout = 15
+        chatbox = self.chrome.wait_for('#pane-side', timeout=timeout)
+        chats = chatbox.find_elements_by_css_selector('div[tabindex]')
+        
+        self.chrome.screenshot('screens/4.png')
+        
+        # print('chats', chats)
         for chat in chats:
-            print(chat.text)
+            # print('---')
+            items = chat.text.split('\n')
+            print(items[1], items[0])
+            return_chats.append( (items[1], items[0]) )
         
 
 if __name__ == '__main__':
@@ -81,5 +91,6 @@ if __name__ == '__main__':
     to = 'Saldo Contas'
     
     whats = Whatsapp()
-    whats.send(message, to)
+    # whats.send(message, to)
+    whats.load_chats()
     

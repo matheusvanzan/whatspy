@@ -9,7 +9,7 @@ DEFAULT_DRIVER = '/usr/bin/chromedriver'
 
 PATH = os.path.dirname(os.path.realpath(__file__))
 DATA = 'user-data-dir={}/profile'.format(PATH)
-SESSION = '{}/session'.format(PATH)
+SESSION = '{}/profile/session'.format(PATH)
 
 
 # chrome options

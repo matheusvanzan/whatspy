@@ -10,7 +10,13 @@ Python Whatsapp API based on Selenium and ChromeDriver
 `Chrome` has been started with `start_chrome.py`, you can just start the remote 
 with `start_remote.py` and it will use the same browser instance.
 
-See the [ChromePy](https://github.com/matheusvanzan/chromepy) repo for more info on the remote aproach.
+
+It saves a `profile/session` file to save `chrome.command_executor._url` and
+`chrome.session_id`.
+
+
+See the [ChromePy](https://github.com/matheusvanzan/chromepy) repo for more 
+info on the remote aproach.
 
 ## Limitations
 
@@ -38,9 +44,9 @@ A `profile` directory will be added to your project directory to save chrome pro
 ## Roadmap
 
 - [x] Save QRCode image for scan
-- [ ] Read latest chats
+- [x] Send message to contact by name
+- [x] Read latest chats
 - [ ] Read latest messages from chat
-- [x] Send message to contact by name (unique)
 - [ ] Send message to contact by number
 - [ ] Read latest archived chats
 - [ ] Read latest archived messages from chat
